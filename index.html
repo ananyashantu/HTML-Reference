@@ -1,0 +1,83 @@
+<!--This is to practice html references-->
+<!DOCTYPE html><!--define doc type is html-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device width initial-scale=1.0">
+        <title>HTML Elements Reference</title><!--define a title for the webpage-->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="pages/html.html">HTML</a> |
+                <a href="pages/css.html">CSS</a> |
+                <a href="pages/js.html">JavaScript</a> |
+                <a href="pages/php.html">Php</a>|
+                <a href="pages/login.html">Login</a>
+                </nav>
+        </header><br>
+        
+        <p>This is normal text - <b>and this is bold text</b>.</p>
+        <!--<a> is used to open a link from the <page-->
+        <!--target _blank will open it in the new window-->
+        <!--ping target is used to notify the url when an user clicks on the hyperlink-->
+        <a href="https://www.w3schools.com" ping="https://www.w3schools.com/trackpings" target="_blank">Practice HTML from here:</a>
+        <!--The <abbr> tag defines an abbreviation or an acronym:-->
+        <p><abbr title="HyperText Markup Language">HTML</abbr> is standard markup language that helps create an web page</p>
+        <!--<abbr> can also be used with <dfn> to define an abbreviation:-->
+        <p><dfn><abbr title="Cascading Styling Sheets">CSS</abbr></dfn> is a language that describes the style of an html document</p>
+        <!--<address> tag defines the contact information for the author/owner of a document or an article:-->
+            <!--email address, URL, physical address, phone number, social media handle, etc.-->
+        
+        <address>
+            written by: <a href="ananyaroychowdhury522@gmail.com"> Ananya Roy Chowdhury</a><br>
+            Visit us: <br>
+            <a href="https://www.facebook.com/ananyashantu/" target="_blank">Ananya</a><br>
+            Chatteswari road, Chattogram.
+        </address>
+        <!--The <map> tag turns an image into a clickable area-->
+        <!--The <area> tag defines an area inside an image map-->
+        <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="33 44 270 351" alt="Computer" href="https://en.wikipedia.org/wiki/Computer" target="_blank">
+            <area shape="rect" coords="290 170 333 247" alt="Phone" href="https://en.wikipedia.org/wiki/Mobile_phone" target="_blank">
+            <area shape="circle" coords="331 255 337 348" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+        </map>
+        <br><br>
+        <!--The <audio> tag is used to embed audio content in a document-->
+        <audio controls>
+            <source src="audio/horse.ogv" type="audio/ogg">
+        </audio>
+        <br><br>
+        <!--The <video> tag is used to embed video content in a document-->
+        <video width="320"height="240" controls>
+            <source src="video/1.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        <!--The <iframe> tag specifies an inline frame to embed another document within the current HTML document-->
+        <iframe src="https://www.prothomalo.com/" title="For News" name="prothomalo">
+        </iframe>
+
+        <!--The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.-->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus cumque dolorem necessitatibus unde modi, blanditiis hic accusantium maxime asperiores expedita perferendis facilis harum consectetur ipsa nobis perspiciatis vel rem est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, delectus odit qui similique aspernatur<wbr> distinctio corporis tempora corrupti cumque in et dolorem ad consequatur praesentium numquam.<wbr> Dolor ratione odio illum.</p>
+        <!--datalist-->
+        <label for="browser"> Choose your browser</label>
+        <input list="browsers"name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="firefox">
+            <option value="chrome">
+            <option value="safari">  
+            <option value="operamini">
+        </datalist>
+        <input type="submit">
+        <footer>
+            <p> Author: Ananya Roy Chowdhury</p>
+            <span>email</span><a href="mailto:ananyaroychowdhury522@gmail.com">ananyaroychowdhury522@gmail.com</a>
+            <span>contact</span><a href="tel:0147323">0147323</a>
+         </footer>
+    </body>
+</html>
+
