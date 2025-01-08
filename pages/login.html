@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device width initial-scale=1.0">
+        <title>HTML Elements Reference</title><!--define a title for the webpage-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+  <!--<label>,<input>,<div>,<span>-->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Login</legend> <!--defines a caption for fieldset element-->
+            <!--name,id in input anf for in label must be same-->
+            <div class="input_box"> 
+                <label for="Username"></label>
+                <input type="text" placeholder="Username" name="Username" id="Username">
+            </div>              
+            <div class="input_box">
+                <label for="Password"></label>
+                <input type="password" placeholder="Password" name="Password" id="Password">
+            </div>
+            <br><br>
+                <label for="gender">Gender</label><br>
+                <span> female</span> <input type="radio" id="female" name="gender" value="female">          
+                <span> male</span> <input type="radio" id="male" name="gender" value="male">          
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    </body>
+</html>
